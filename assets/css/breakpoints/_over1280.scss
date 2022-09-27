@@ -1,0 +1,561 @@
+.active_pc {
+  display: inline;
+}
+.active_tb {
+  display: none;
+}
+
+//----------
+// header
+//----------
+
+.ly_header_wrapper {
+  display: flex;
+  height: 126px;
+  padding: 10px 0 0;
+  align-items: center;
+  // background-color: pink;
+  justify-content: space-between;
+}
+
+.ly_header {
+  // height: 9.4%;
+  width: 32.5%;
+  margin-top: -20px;
+  &_inner {
+    align-items: flex-start;
+    align-items: center;
+    // padding-top: 10px;
+  }
+}
+
+.n-foundation {
+  width: 80px;
+  left: 340px;
+}
+
+.bl_hLogo {
+  &_wrapper {
+    width: 120%;
+    max-width: 300px;
+  }
+  &_desc {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    margin-top: -7px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    letter-spacing: 0.05em;
+    > .el_commonHeading {
+      &_wrapper {
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 140%;
+        > p:nth-child(2) {
+          display: none;
+        }
+      }
+    }
+  }
+  &_img_wrapper {
+    // padding-top: 28px;
+    width: 100%;
+    max-width: 360px;
+  }
+}
+
+.el_hamburgerBtn_wrapper {
+  display: none;
+}
+
+.bullet-ta-only {
+  display: none;
+}
+.indention-pc-only {
+  display: inline;
+}
+
+.bl_navUnit {
+  display: block;
+  position: static;
+  // gap: 10px;
+  justify-content: flex-end;
+  align-items: flex-end;
+  min-width: 760px;
+  height: 100%;
+  width: auto;
+  padding: 0 0.5% 0 0;
+  opacity: 1;
+  z-index: 10;
+  background-color: $--base-02;
+  overflow: hidden;
+}
+
+.bl_convNav {
+  min-height: 70px;
+  &_inner {
+    display: flex;
+    flex-direction: row;
+    align-items: normal;
+    justify-content: flex-end;
+    margin-right: -5px;
+    // margin-bottom: 10px;
+    // gap: 25px;
+    > li {
+      margin-bottom: 10px;
+    }
+    > li:not(:nth-of-type(3)) {
+      margin-right: 25px;
+    }
+  }
+  &_desc {
+    display: none;
+  }
+  // conNavの順番変更
+  &_unitSp_wrapper {
+    order: 2;
+  }
+  &_forHelp {
+    order: 1;
+  }
+}
+
+.el_btn_wrapper_contact {
+  order: 3;
+}
+
+.bl_convNav {
+  min-height: fit-content;
+  &_item {
+    display: inline-block;
+    &__login {
+      color: $--sub-01;
+      &:hover {
+        color: $--text;
+        text-decoration-color: $--sub-01;
+        text-underline-offset: 0.3em;
+        transition: 0.7s;
+      }
+    }
+    &__forHelp {
+      font-weight: normal;
+      &:hover {
+        color: $--main;
+        transition: 0.7s;
+      }
+    }
+  }
+}
+
+.bl_convNav_btn__login {
+  display: none;
+}
+
+.el_btn {
+  &_wrapper {
+    display: inline-block;
+    width: 144px;
+    height: 40px;
+    &_contact {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+  width: 100%;
+  display: inline-block;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.8rem;
+  line-height: 40px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(178, 178, 178, 1);
+  &__join {
+    background-color: $--sub-01;
+    color: $--base-02;
+    &:hover {
+      background-color: $--base-02;
+      color: $--sub-01;
+      border: solid 1px $--sub-01;
+      transition: 0.7s;
+    }
+  }
+  &__contact {
+    color: $--sub-01;
+    border: 1px solid $--sub-01;
+    &:hover {
+      background-color: $--sub-01;
+      transition: 0.7s;
+    }
+  }
+}
+
+//--------グローバルナビゲーション------------------------
+
+.bl_globalNav {
+  width: 100%;
+  height: 100%;
+  // margin-top: 1.2%;
+  &_inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    margin-top: 0;
+    margin-right: -25px;
+    > li {
+      padding-bottom: 18px;
+    }
+  }
+}
+
+.bl_globalNav {
+  &_item {
+    &_wrapper {
+      width: auto;
+      height: 100%;
+      border: none;
+      &:first-child {
+        margin-right: 15px;
+      }
+    }
+    display: inline-block;
+    position: relative;
+    font-weight: bold;
+    letter-spacing: 0.02em;
+    text-align: center;
+    padding: 10px 22px;
+    white-space: nowrap;
+    &::after {
+      content: "・";
+      position: absolute;
+      color: $--main;
+      top: 65%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 95%;
+      left: 10%;
+      background-color: $--main;
+      height: 1px;
+      width: 80%;
+      opacity: 0;
+    }
+    &:hover {
+      color: $--main;
+      &::after {
+        opacity: 0;
+        transition: 0.7s;
+      }
+      &::before {
+        opacity: 1;
+        transition: 0.7s;
+      }
+    }
+  }
+}
+
+.ly_hero {
+  padding-top: 126px;
+}
+
+.ddMenuWrapper {
+  height: 100%;
+}
+
+.bl_globalNav_inner > li {
+  padding-bottom: 0px;
+}
+
+.bl_globalNav_arrow {
+  position: absolute;
+  top: 35%;
+  width: 10px;
+  right: 0;
+}
+
+//ハンバーガーボタン
+.el_hamburgerBtn {
+  display: none;
+}
+
+// 教材検索ドロップダウンメニュー
+.bl_ddMenu {
+  display: none;
+  // visibility: visible;
+  // opacity: 1;
+  // transform: translateY(-220px);
+  top: 126px;
+}
+
+// スマホナビ用の教材検索のネストリストの非表示
+.bl_globalNav_nested_wrapper {
+  display: none;
+}
+
+.bl_globalNav_sns,
+.bl_globalNav_nested {
+  display: none;
+}
+
+// main-visual
+
+.bl_mv {
+  height: 512px;
+  height: 716px;
+  padding-top: 126px;
+  &_txtWrapper {
+    width: fit-content;
+    bottom: 18%;
+    display: block;
+  }
+  > .el_commonHeading_wrapper {
+    flex-direction: row;
+  }
+}
+
+.slick-dots {
+  bottom: 8%;
+}
+
+// ここからメイン
+
+.ly_main {
+  width: 93.75%;
+  max-width: 1200px;
+}
+
+// 教材検索・ダウンロードとダミー団体名講演を依頼のナビカード
+
+.bl_navCard {
+  &_inner {
+    padding: 10% 9% 9%;
+  }
+  &_heading {
+    // font-size: 3rem;
+    // Edgeでの文字の段落落ち対応
+    font-size: 2.7rem;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+    line-height: 1.12;
+  }
+  &_desc {
+    padding-top: 8%;
+    padding-bottom: 5%;
+    // font-size: 2.2rem;
+    // Edgeでの文字の段落落ち対応
+
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.82;
+    letter-spacing: 0.05em;
+  }
+}
+
+//自分の人生をデザインしよう
+.bl_message {
+  &_inner {
+    margin-top: 250px;
+  }
+  &_desc {
+    line-height: 2.5;
+  }
+}
+
+// このプロジェクトで大事にしていること
+.bl_important {
+  &_inner {
+  }
+  &_heading {
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+    &::after {
+      width: 63%;
+    }
+  }
+}
+
+.bl_important_icoItem_txt {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+//  「私たちについて」「導入事例」へのナビ
+
+.ly_cont__top {
+  .bl_navArea_inner {
+    width: 73%;
+    // margin-top: 120px;
+    height: 63px;
+  }
+
+  .el_navBtn {
+    width: 35%;
+    &_heading {
+      letter-spacing: 0.1em;
+    }
+    &:first-of-type {
+      margin-right: 29%;
+    }
+  }
+}
+
+// me.htmlのボタン
+
+// TOPICS
+
+.el_card {
+  &_imgBlock {
+    height: 230px;
+  }
+}
+
+.el_navToTop {
+  margin-top: 305px;
+}
+
+// フッター
+
+.ly_footer {
+  position: relative;
+  // z-index: -1;
+  &_inner {
+    display: flex;
+    justify-content: space-between;
+    // width: 80%;
+    // max-width: 1200px;
+    // margin: 120px auto 0;
+    // padding: 53px 0 12px 0;
+  }
+}
+
+.bl_footerMenu {
+  margin-top: 76px;
+}
+
+.el_sns_wrapper {
+  margin-top: 60px;
+}
+
+// 下層ページの共通CSSーーーーーーーーーーーーーーーーーーーーーーー
+// 下層ページのメインビジュアル高さ450px共通CSS-----------------
+
+.bl_mv_subPage {
+  padding-top: 450px;
+  &__about {
+    padding-top: 702px;
+    background-position: center;
+  }
+}
+
+// ＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊
+//
+// 授業をする前に
+//
+// ＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊
+
+.el_navToTop__before {
+  margin-top: 250px;
+}
+
+// ＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊
+//
+// 導入実績
+//
+// ＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊
+
+.el_navToTop__result {
+  margin-top: 240px;
+}
+
+// ＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊
+//
+// 授業詳細
+//
+// ＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊
+.un_classDetailMv {
+  &_headingUnit {
+    padding-top: 65px;
+  }
+  &_txtWrapper {
+    > h1 {
+      font-size: 4rem;
+    }
+  }
+}
+
+.un_breadcrumb_wrapper__c-detail {
+  .bl_breadcrumb {
+    padding: 0 3%;
+  }
+}
+
+// ＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊
+//
+// 私たちについて
+//
+// ＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊
+.ly_hero__about {
+  .bl_mv_subPage {
+    &_imgWrapper {
+      padding-top: unset;
+      margin: 0 auto;
+      > img {
+        position: static;
+      }
+    }
+  }
+}
+
+// ＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊
+//
+// 会員登録
+//
+// ＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊
+
+.bl_appForm {
+  &_flow {
+    &Unit {
+      &_item {
+        &_inner {
+          > p {
+            font-size: 1.6rem;
+          }
+        }
+      }
+    }
+  }
+}
+.bl_choicesCheck {
+  &_item {
+    width: 37%;
+    &:nth-of-type(3n) {
+      width: 22%;
+    }
+  }
+}
+
+.ly_twoBtn {
+  .el_navButton:first-of-type {
+    margin-right: 23.1%;
+  }
+}
+
+// ＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊
+//
+// Q&A + 問い合わせ　me.html
+//
+// ＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊
+.page_me {
+  .bl_FAQ_heading {
+    padding-top: 190px;
+  }
+
+  .bl_contact {
+    padding-top: 160px;
+  }
+}

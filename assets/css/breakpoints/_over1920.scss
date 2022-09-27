@@ -1,0 +1,104 @@
+//----------
+// header
+//----------
+
+// .ly_header_inner{
+// 	padding: 0;
+// }
+
+// .bl_hLogo_img_wrapper{
+// 	transform: translateX(0);
+// }
+
+// .bl_hLogo{
+// 	&_desc{
+// 		> .el_commonHeading{
+// 			&_wrapper{
+// 				flex-direction: row;
+// 				> p:nth-child(2){
+// 					display: block;
+// 				}
+// 			}
+// 		}
+// 	}
+// 	&_img_wrapper{
+// 		max-width: 380px;
+// 	}
+// }
+
+// main-visual
+.bl_mv {
+  height: 718px;
+  &_txtWrapper {
+    padding-left: 8%;
+    bottom: 12%;
+    > h2 {
+      font-size: 4rem;
+    }
+  }
+}
+
+.slick-dots {
+  padding-left: 8%;
+  padding-bottom: 0;
+  bottom: 5%;
+  li {
+    margin-right: 20px;
+  }
+}
+
+.slick-dots li button:before {
+  font-size: 20px;
+  line-height: 16px;
+}
+
+// 教材検索・ダウンロードとダミー団体名講演を依頼のナビカード
+
+.bl_navCard {
+  &_heading {
+    font-size: 3.4rem;
+  }
+  &_desc {
+    font-size: 2.4rem;
+  }
+}
+
+// このプロジェクトで大事にしていること
+
+//  「私たちについて」「導入事例」へのナビ
+
+// TOPICS
+.bl_topics {
+  margin-top: 250px;
+}
+
+// 下層ページの共通CSSーーーーーーーーーーーーーーーーーーーーーーー
+// 下層ページのメインビジュアル高さ450px共通CSS-----------------
+.bl_mv_subPage {
+  background-color: #fff;
+  &_imgWrapper {
+    padding-top: 450px;
+    margin: 0 auto;
+  }
+}
+
+//----------
+// navToTop
+//----------
+
+.el_navToTop {
+  margin-top: 420px;
+}
+
+//----------
+// footer
+//----------
+
+.ly_footer {
+  // margin-top: -15px;
+  position: relative;
+}
+
+.bl_footerMenu {
+  margin-top: 50px;
+}

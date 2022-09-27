@@ -1,0 +1,37 @@
+@import "./modules/variables";
+
+@import "./modules/helper";
+
+// base1279-769
+@import "breakpoints/base";
+
+@media(min-width: 1280px){
+	@import "breakpoints/over1280";
+}
+
+@media(min-width: 1920px) {
+	@import "breakpoints/over1920";
+}
+
+@media(max-width: 768px){
+	@import "breakpoints/768under";
+}
+
+// // ２回めにやってみた書き方
+// @media(max-width: 768px) and (orientation: landscape) {
+// 	@import "breakpoints/768under";
+// 	@import "breakpoints/landscape";
+// }
+
+// 最初にやってみた書き方
+// @media(orientation: landscape) {
+// 	@import "breakpoints/landscape";
+// }
+
+// ２回めにやってみた書き方
+// @media(max-width: 768px) and (orientation: landscape) {
+// 	@import "breakpoints/landscape";
+// }
+@media(max-width: 768px) and (orientation: landscape) {
+	@import "breakpoints/landscape";
+}

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="110" height="110" viewBox="0 0 110 110">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="長方形_190" data-name="長方形 190" width="69.03" height="33.5" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="グループ_1237" data-name="グループ 1237" transform="translate(-441 -967)">
+    <g id="グループ_1235" data-name="グループ 1235">
+      <g id="長方形_192" data-name="長方形 192" transform="translate(441 967)" fill="#fff" stroke="#24596f" stroke-linecap="round" stroke-width="3" stroke-dasharray="4 7">
+        <rect width="110" height="110" rx="55" stroke="none"/>
+        <rect x="1.5" y="1.5" width="107" height="107" rx="53.5" fill="none"/>
+      </g>
+      <g id="グループ_1224" data-name="グループ 1224" transform="translate(462 999)" clip-path="url(#clip-path)">
+        <g id="グループ_1223" data-name="グループ 1223" transform="translate(4.705 6.413)">
+          <circle id="楕円形_132" data-name="楕円形 132" cx="29.535" cy="29.535" r="29.535" fill="#fcfcfc" stroke="#045a71" stroke-miterlimit="10" stroke-width="3"/>
+          <circle id="楕円形_133" data-name="楕円形 133" cx="23.891" cy="23.891" r="23.891" transform="translate(5.644 5.644)" fill="#fcfcfc" stroke="#045a71" stroke-miterlimit="10" stroke-width="3"/>
+          <circle id="楕円形_134" data-name="楕円形 134" cx="18.247" cy="18.247" r="18.247" transform="translate(11.289 11.289)" fill="#fcfcfc" stroke="#045a71" stroke-miterlimit="10" stroke-width="3"/>
+          <circle id="楕円形_135" data-name="楕円形 135" cx="12.602" cy="12.602" r="12.602" transform="translate(16.933 16.933)" fill="none" stroke="#045a71" stroke-miterlimit="10" stroke-width="3"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
